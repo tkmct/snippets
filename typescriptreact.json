@@ -1,0 +1,53 @@
+{
+	"React Component": {
+		"prefix": "rc",
+		"body": [
+			"import * as React from 'react'",
+			"",
+			"class $1 extends React.Component {",
+			"  public render() {",
+			"    return $2",
+			"  }",
+			"}",
+			"",
+			"export default $1"
+		],
+		"description": "React Component"
+	},
+	"React Component with Props": {
+		"prefix": "rcp",
+		"body": [
+			"import * as React from 'react'",
+			"",
+			"interface IProps {$2}",
+			"",
+			"export default class $1 extends React.Component<IProps> {",
+			"  public render() {",
+			"    return $3",
+			"  }",
+			"}",
+			"",
+			"export default $1"
+		],
+		"description": "React Component with Props"
+	},
+	"React Component with Props and State": {
+		"prefix": "rcps",
+		"body": [
+			"import * as React from 'react'",
+			"",
+			"interface IProps {$2}",
+			"",
+			"interface IState {$3}",
+			"",
+			"export default class $1 extends React.Component<IProps, IState> {",
+			"  public render() {",
+			"    return $4",
+			"  }",
+			"}",
+			"",
+			"export default $1"
+		],
+		"description": "React Component with Props and State"
+	},
+}
